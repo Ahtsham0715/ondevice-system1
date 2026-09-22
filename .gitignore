@@ -1,0 +1,25 @@
+# Reference clone of upstream Laya, kept locally for study only — not redistributed here.
+.laya_upstream/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Data / checkpoints / logs (large, regenerable — see DATASET_CONTRIBUTION.md / model_cards/)
+data/raw/
+data/cache/
+checkpoints/
+runs/
+wandb/
+*.safetensors
+*.pt
+*.onnx
+*.tflite
+*.mlpackage
+
+# OS
+.DS_Store
+config.bat
+node_modules

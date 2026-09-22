@@ -1,0 +1,11 @@
+OnDevice-System1
+Copyright 2026 the OnDevice-System1 contributors
+
+This product includes software adapted from Laya
+(https://github.com/NandhaKishorM/laya), Copyright Convai Innovations,
+licensed under the Apache License, Version 2.0.
+
+In particular, src/model/decision_model.py adapts the DecisionModel
+architecture, sequence-building format, and RLCD proper-scoring-rule loss
+originally published in laya/common.py. Modified files carry a header
+noting the adaptation, per Apache License 2.0 section 4(b).

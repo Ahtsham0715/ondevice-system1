@@ -1,0 +1,14 @@
+{
+  "_comment": "OnDevice-Tiny. Encoder is BERT-Small from Turc et al. 'Well-Read Students Learn Better' (google-research/bert), an existing pretrained checkpoint — not yet distilled. Verified to exist on HF as of 2026-09-22 (see docs/LAYA_ANALYSIS.md). Param counts are the encoder's published config (4 layers x 512 hidden x 8 heads); head adds a few M more (measured, not estimated, once build_model() is run — see RESEARCH_LOG.md for the first real count).",
+  "encoder": "google/bert_uncased_L-4_H-512_A-8",
+  "head_layers": 1,
+  "dropout": 0.1,
+  "max_len": 384,
+  "min_instruction_tokens": 24,
+  "min_opt_tokens": 6,
+  "max_opt_tokens": 32,
+  "act_costs": {"escalate": 0.5},
+  "cost_wrong_act": 3.0,
+  "amp_dtype": "fp32",
+  "measured_params": {"encoder": 28763648, "head": 3550979, "total": 32314627, "measured_on": "2026-09-22, DecisionModel.num_parameters()"}
+}

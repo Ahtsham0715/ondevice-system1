@@ -1,0 +1,14 @@
+{
+  "_comment": "OnDevice-Small. Encoder is BERT-Medium from Turc et al. (8 layers x 512 hidden), existing pretrained checkpoint, same family/tokenizer as OnDevice-Tiny so distillation experiments are comparable across the two tiers.",
+  "encoder": "google/bert_uncased_L-8_H-512_A-8",
+  "head_layers": 2,
+  "dropout": 0.1,
+  "max_len": 384,
+  "min_instruction_tokens": 24,
+  "min_opt_tokens": 8,
+  "max_opt_tokens": 40,
+  "act_costs": {"escalate": 0.5},
+  "cost_wrong_act": 3.0,
+  "amp_dtype": "fp32",
+  "measured_params": {"encoder": 41373184, "head": 6703363, "total": 48076547, "measured_on": "2026-09-22, DecisionModel.num_parameters()"}
+}
